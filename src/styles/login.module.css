@@ -1,0 +1,143 @@
+@import "./colors.css";
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.mainContainer>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.logoContainer h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.logoContainer>div {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer>div>img {
+    width: 100%;
+    height: auto;
+    margin-top: -10px;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+}
+
+.mainContainer>div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+    margin-top: -10px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.recoveryPass > a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.passContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.showPass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.showPass>label {
+    color: var(--text-color);
+    font-size: 0.8rem;
+}
+
+.labelError {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .mainContainer>div {
+        margin: 5px 10px;
+        transition: all 0.3s ease-in-out;
+        padding: 7px;
+        width: 90%;
+    }
+
+    .logoContainer h1 {
+        font-size: 1.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .logoContainer>div>img {
+        width: 80%;
+        transition: all 0.3s ease-in-out;
+    }
+}

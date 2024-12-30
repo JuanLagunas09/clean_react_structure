@@ -1,0 +1,51 @@
+@import "./colors.css";
+
+.customFormGroup {
+    display: flex;
+    flex-direction: column;
+    margin: 7px 0px;
+    width: 100%;
+    position: relative;
+}
+
+.customFormGroup>.inputCustomForm {
+    outline: none;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.customFormGroup>label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+.customFormGroup>.inputCustomForm:focus+label,
+.customFormGroup>.inputCustomForm:not(:placeholder-shown) + label  {
+    top: -7px;
+    left: 10px;
+    font-size: 0.85rem;
+    padding: 0px 5px;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* .customFormGroup>.inputCustomForm:not(:placeholder-shown)+label {
+    top: -7px;
+    left: 10px;
+    font-size: 0.85rem;
+    padding: 0px 5px;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+} */
+
+@media screen and (max-width: 768px) {}
